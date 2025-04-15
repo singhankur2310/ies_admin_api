@@ -11,7 +11,7 @@ public interface AccountService {
 
 	public List<UserAccountForm> fetchUserAccounts();
 
-	public UserAccountForm getUserAccById(Integer accId);
+	public UserAccountForm getUserAccById(Long accId);
 
 	public String changeAccStatus(Integer accId, String status);
 

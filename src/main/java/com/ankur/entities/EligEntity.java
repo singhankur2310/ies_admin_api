@@ -1,7 +1,5 @@
 package com.ankur.entities;
 
-import java.time.LocalDate;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,15 +9,14 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "IES_PLANS")
-public class PlanEntity {
+@Table(name = "ELIG_DTLS")
+public class EligEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long planId;
-	private String planCategory;
-	private String planName;
-	private LocalDate planStartDate;
-	private LocalDate planEndDate;
-	private String activeSw;
+	private Integer edgTraceId;
+
+	private String planStatus;
+
+	private Double benefitAmt;
 
 }
