@@ -2,9 +2,11 @@ package com.ankur.bindings;
 
 import java.time.LocalDate;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Setter
+@Getter
 public class PlanForm {
 	private String planCategory;
 	private String planName;

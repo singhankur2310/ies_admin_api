@@ -13,4 +13,6 @@ public interface UserRepo extends JpaRepository<UserEntity, Long> {
 	public Integer updateAccstatus(Integer userId, String status);
 
 	public UserEntity findByEmail(String email);
+
+	public UserEntity findByEmailAndPwd(String email, String pwd);
 }

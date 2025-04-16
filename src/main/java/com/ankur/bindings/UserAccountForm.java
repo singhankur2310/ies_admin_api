@@ -2,9 +2,11 @@ package com.ankur.bindings;
 
 import java.time.LocalDate;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Setter
+@Getter
 public class UserAccountForm {
 	private String fullName;
 	private String email;
